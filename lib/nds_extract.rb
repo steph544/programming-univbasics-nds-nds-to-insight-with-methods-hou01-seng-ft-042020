@@ -25,12 +25,7 @@ def directors_totals(nds)
 
   while director_index < nds.length do
     director_name = nds[director_index][:name]
-    results[director_name] = 0
-	  row_index = 0
-
-    while row_index<nds[director_index][:movies].length do
-    results[director_name] += gross_for_director(nds[director_index])
-    row_index +=1
+    results[director_name] = gross_for_director(nds[director_index])
     end
     director_index += 1
  end
