@@ -20,7 +20,6 @@ def gross_for_director(director_data)
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds) 
-  binding.pry 
   results={}
   director_index=0 
 
