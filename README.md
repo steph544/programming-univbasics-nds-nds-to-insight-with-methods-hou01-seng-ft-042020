@@ -1,4 +1,4 @@
- what# Derive Insight from NDS Using Methods
+Sure what# Derive Insight from NDS Using Methods
 
 ## Learning Goals
 
