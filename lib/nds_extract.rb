@@ -19,7 +19,8 @@ def gross_for_director(director_data)
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
-def directors_totals(nds)
+def directors_totals(nds) 
+  binding.pry 
   results={}
   director_index=0 
 
@@ -29,10 +30,11 @@ def directors_totals(nds)
 	  row_index = 0
 
     while row_index<nds[director_index][:movies].length do
-    results[director_name]+= nds[director_index][:movies][row_index][:worldwide_gross]
+    results[director_name] += gross_for_director(nds[0])
     row_index +=1
     end
     director_index += 1
  end
 results
 end
+
